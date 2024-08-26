@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "api_ai_sport_assistant": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7129",
+      "launchBrowser": false
+    }
+  }
+}
