@@ -35,8 +35,6 @@ var host = new HostBuilder()
                 ApiKey
                 );
 
-            builder.Plugins.AddFromType<DBQueryPlugin>();  
-
             return builder.Build();
         });
 
@@ -64,7 +62,7 @@ var host = new HostBuilder()
 
         services.AddHttpClient<IBingSearchClient, BingSearchClient>(client =>
         {
-            client.BaseAddress = new Uri(BingSearchKey);
+            client.BaseAddress = new Uri(BingSearchEndPoint);
         });
 
         services.AddSingleton<IBingSearchClient>(sp =>
@@ -72,7 +70,7 @@ var host = new HostBuilder()
             var httpClientFactory = sp.GetRequiredService<IHttpClientFactory>();
             var httpClient = httpClientFactory.CreateClient(nameof(IBingSearchClient));
             var apiKey = BingSearchKey;
-            var endpoint = BingSearchKey;
+            var endpoint = BingSearchEndPoint;
             return new BingSearchClient(httpClient, apiKey, endpoint);
         });
 

@@ -1,5 +1,5 @@
 ﻿Query:
-Provide a summary of the [11.2.23 NCAA Football - Ohio St vs Michigan] college football game include the number of penalties and reviews.
+Provide a summary of the 11/2/23 NCAA Football - Ohio St vs Michigan college football game include the number of penalties and reviews.
 
 Instructions:
 Using the provided query return the JSON structure below populated with the topic and actions that user is asking you to perform.  Only output JSON!
