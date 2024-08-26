@@ -20,8 +20,8 @@ namespace api_ai_sport_assistant.Plugins
 
 
         [KernelFunction]
-        [Description("Performs a Bing Search to get statistics about a game.")]
-        public async Task<string> GetStatisticsFromBingSearch([Description("User query about game statistics external to Database"), Required] string query)
+        [Description("Performs a Bing Search to get statistics when user approves an external search.")]
+        public async Task<string> GetStatisticsFromBingSearch([Description("Search external using Bing Search to get statistics about a game"), Required] string query)
         {
             Console.WriteLine($"Bing Search: {query}");
 
