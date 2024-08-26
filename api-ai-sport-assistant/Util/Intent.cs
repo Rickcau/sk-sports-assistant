@@ -2,7 +2,7 @@
 using Microsoft.SemanticKernel.Connectors.OpenAI;
 using System.Text.RegularExpressions;
 
-
+// Not being used...
 namespace api_ai_sport_assistant.Util
 {
     internal static class Intent
