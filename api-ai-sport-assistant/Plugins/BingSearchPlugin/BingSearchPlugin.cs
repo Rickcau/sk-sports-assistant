@@ -24,14 +24,16 @@ namespace api_ai_sport_assistant.Plugins
 
         [KernelFunction]
         [Description("Performs a Bing Search to get statistics when user approves an external search.")]
-        public async Task<string> GetStatisticsFromBingSearch([Description("Search external using Bing Search to get statistics about a game"), Required] string query, [Description("Common separated list of stats to retreive"), Required] string actions)
+        public async Task<string> GetStatisticsFromBingSearch([Description("Search external using Bing Search to get statistics about a game"), Required] string query, [Description("list of stats to retreive"), Required] List<string> actions)
         {
-            Console.WriteLine($"Bing Search: {query} {actions}");
+            string commaSeparatedActions = string.Join(", ", actions);
+            Console.WriteLine($"Bing Search: {query} {commaSeparatedActions}");
 
-            var searchQuery = $"{query} {actions}";
+            var searchQuery = $"{query} {commaSeparatedActions}+site:espn.com or ncaa.com";
 
             var test = $"Provide a summary of the 11/2/23 NCAA Football -Ohio St vs Michigan college football game include the number of penalties and reviews";
             var results = await _bingSearchClient!.SearchAsync(searchQuery);
+           // var (topTenResults, summaries) = await _bingSearchClient!.SearchForTopUrlsAsync(searchQuery);
 
             //var test = "Provide a summary of the 11.2.23 NCAA Football - Ohio St vs Michigan college football game include the number of penalties and reviews.";
 
@@ -51,7 +53,7 @@ namespace api_ai_sport_assistant.Plugins
             // var snippetresult = await _bingSearchClient!.SearchAsync($"Site: espn.com or ncaa.com Topic: {bingSearchTopicActionResults.Topic} get: {actionItem.Action}");
 
 
-            return results;
+            return summaries;
         }
     }
 }

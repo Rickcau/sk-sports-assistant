@@ -6,11 +6,11 @@
     "ApiKey": "<ApiKey>",
     "ApiDeploymentName": "<APiDeployment",
     "ApiEndpoint": "<ApiEndpoint>",
-    "EmbeddingName": "<EmbeddingName>",
-    "AISearchIndex": "<AISearchIndex>",
-    "AISearchSemanticConfigName": "<AISearchSemanticConfigName>",
-    "AISearchURL": "<AISearchURL>",
-    "AISearchKey": "<AISearchKey>"
+    "BingSearchApiEndPoint": "https://api.bing.microsoft.com/",
+    "BingSearchKey": "<your_bing_searchkey>",
+    "DatabaseConnection": "Server=tcp:<your_info>.database.windows.net,1433;Initial Catalog=<Your_Catalog>;Persist Security Info=False;User ID=<Your_UserId>;Password=<Your_Password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+    "DatabaseDescription": "This DB contains tables with sports related data"
+
   }
 }
 
