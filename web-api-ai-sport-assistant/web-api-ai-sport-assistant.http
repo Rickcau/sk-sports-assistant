@@ -1,0 +1,6 @@
+@web_api_ai_sport_assistant_HostAddress = http://localhost:5244
+
+GET {{web_api_ai_sport_assistant_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

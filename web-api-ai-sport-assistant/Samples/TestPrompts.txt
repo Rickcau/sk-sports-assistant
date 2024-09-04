@@ -1,0 +1,57 @@
+﻿Query:
+Provide a summary of the 11/2/23 NCAA Football - Ohio St vs Michigan college football game include the number of penalties and reviews.
+
+Instructions:
+Using the provided query return the JSON structure below populated with the topic and actions that user is asking you to perform.  Only output JSON!
+
+{
+   "topic": "North Carolina vs Michigan",
+   "data" : [ {"action": "number of penalties"},
+              {"action": "number of reviews"},
+              {"action": "game summary"}
+    ]
+}
+
+CHAT GPT will respond with: 
+{
+   "topic": "11.2.23 NCAA Football - Ohio St vs Michigan",
+   "data" : [
+      {"action": "number of penalties"},
+      {"action": "number of reviews"},
+      {"action": "game summary"}
+   ]
+}
+
+Notes:  I did some research on this an Bing CoPilot is performing some special magic with prompts.  It's possible that we would get better results if
+we break the prompt down into topic and actions the user is requesting us to perform then perform individual Bing Searchs with each action, extracting the snippets for each action
+, then have the ALL to summarize it.   
+
+Bing CoPilot will tell you how it is doing things.
+
+Sure! Here’s how I break down a question like yours to perform multiple searches effectively:
+
+Identify Key Elements:
+- Event: NCAA Football game.
+- Teams: Ohio State vs. Michigan.
+- Date: November 25, 2023.
+- Specific Details Needed: Summary of the game, number of penalties, and reviews.
+
+Formulate Search Queries:
+- General Game Summary: Search for a summary of the Ohio State vs. Michigan game on November 25, 2023.
+- Penalties: Search specifically for the number of penalties in the game.
+- Reviews: Search for information on the number of reviews during the game.
+
+Perform Searches:
+- First Search: Look for a general summary of the game to get the final score, key moments, and standout performances.
+- Second Search: Focus on finding detailed statistics, including the number of penalties.
+- Third Search: Look for information on the number of reviews conducted during the game.
+
+Synthesize Information:
+- Combine the information from multiple sources to create a comprehensive summary.
+- Ensure all key details are covered, including the final score, key plays, penalties, and reviews.
+
+Present the Information:
+- Format the response in a clear and concise manner.
+- Include citations to the sources used for accuracy and credibility.
+
+By breaking down the question into these components, I can ensure that I gather all the necessary information to provide a thorough and accurate response. If you have any more questions or need further details, feel free to ask!
