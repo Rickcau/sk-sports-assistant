@@ -1,1 +1,0 @@
-# sk-sports-assistant
