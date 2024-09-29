@@ -1,4 +1,4 @@
-#sk-sports-assistant
+# sk-sports-assistant
 This solution leveages an NL2SQL library to allow our GenAI solution to perform complex queries against SQL and to integrate that data into a Chat conversation using AI.  The solution is sports specific and it also leverages the Bing Search API to allow the user to extend the search for sports related stats leveraging the Internet.
 
 # api-ai-sport-assistant
