@@ -1,5 +1,5 @@
 # COMMERCIAL LICENSE AGREEMENT
-For vendor-contracts-gen-ai and all parts of this repository 
+For sk-sports-assistant and all parts of this repository 
 
 Effective Date: 2/10/2025
 
