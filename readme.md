@@ -1,5 +1,11 @@
-## LICENSE
-The [MIT License](./LICENSE) applies to all the solutions / projects / examples included in this repository.  
+## Licensing
+
+This project uses a dual license model:
+
+- **Commercial License**: Required for Azure-hosted production deployments
+- **MIT License**: Applies to open source use cases
+
+See [LICENSE.md](LICENSE.md) for details. 
 
 # sk-sports-assistant
 This solution leveages an NL2SQL library to allow our GenAI solution to perform complex queries against SQL and to integrate that data into a Chat conversation using AI.  The solution is sports specific and it also leverages the Bing Search API to allow the user to extend the search for sports related stats leveraging the Internet.
